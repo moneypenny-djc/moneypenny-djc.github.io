@@ -1,0 +1,7 @@
+<!doctype html><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tesla sign-in</title>
+<body style="font-family:-apple-system,sans-serif;padding:24px;max-width:600px">
+<h2>Almost done</h2><p>Copy this code and paste it back into the chat:</p>
+<p><input id="c" readonly style="width:100%;font-size:16px;padding:8px"></p>
+<button onclick="navigator.clipboard.writeText(document.getElementById('c').value);this.textContent='Copied'" style="font-size:16px;padding:8px 16px">Copy code</button>
+<script>var p=new URLSearchParams(location.search);document.getElementById('c').value=p.get('code')||('No code: '+(p.get('error_description')||p.get('error')||'missing'));</script>
+</body>
